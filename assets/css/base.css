@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-theme: #1DB954;
+    --color-grey: #888;
+    --color-black: #191414;
+    --color-dark-gray: #2c2c2e;
+    --color-dark: #181818;
+    --color-active: #3a3a3c;
+    --height-header: 80px;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    font-family: sans-serif;
+    min-height: 1000px;
+}
+
+body {
+    background-color: var(--color-black) !important;
+    /* overflow: hidden; */
+}
+
+@keyframes scaleUp {
+    from {
+        scale: 1;
+    }
+
+    to {
+        scale: 1.2;
+    }
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

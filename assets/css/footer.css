@@ -1,0 +1,19 @@
+.footer-upload {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-upload .btn-upload {
+    display: block;
+    margin-left: auto;
+    margin-top: 10px;
+    background-color: var(--color-theme);
+    color: white;
+    border: none;
+    padding: 10px 60px;
+    border-radius: 20px;
+    font-size: 1em;
+}
+
+.footer-upload .btn-upload:hover {
+    background-color: rgb(29, 185, 84, 0.7);
+}

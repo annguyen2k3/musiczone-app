@@ -1,0 +1,165 @@
+/* Sidebar left */
+.sidebar {
+    background-color: var(--color-dark);
+    padding: 12px;
+    border-radius: 10px;
+    max-height: calc(100vh - 85px);
+    z-index: 3;
+    overflow: auto;
+}
+
+.sidebar .logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #f39c12;
+    margin-bottom: 20px;
+}
+
+.sidebar .logo img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.sidebar .menu {
+    flex-grow: 1;
+}
+
+.sidebar .menu a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.sidebar .menu a i,
+.sidebar .menu .playlist i {
+    margin-right: 10px;
+}
+
+.sidebar .menu a.active {
+    background-color: #3a3a3c;
+    border-radius: 10px;
+}
+
+.sidebar .menu .playlist {
+    cursor: pointer;
+}
+
+.sidebar::-webkit-scrollbar,
+.play-list::-webkit-scrollbar {
+    width: 4px;
+}
+
+.sidebar::-webkit-scrollbar-track,
+.play-list::-webkit-scrollbar-track {
+    /* background-color: #f1f1f1; */
+    outline: none;
+}
+
+.sidebar::-webkit-scrollbar-thumb,
+.play-list::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover,
+.play-list::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+.sidebar .menu .playlist-item {
+    display: none;
+}
+
+.sidebar .menu .playlist a {
+    margin-left: 20px;
+}
+
+.sidebar .menu .playlist a,
+.sidebar .menu .playlist .drop_down-playlist {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+.sidebar .menu .playlist #arrow-right {
+    font-size: 1.2rem;
+    margin-left: auto;
+}
+
+.sidebar .menu .playlist a img {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.sidebar .logout {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.sidebar .logout i {
+    margin-right: 10px;
+}
+
+
+
+/* Current song */
+.current-song {
+    padding: 12px;
+    /* max-height: 570px; */
+    width: 250px;
+}
+
+.current-song__avt {
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.current-song__heading {
+    color: #fff;
+    font-size: 1.6rem;
+    margin: 8px 0;
+}
+
+.current-song__name {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 550;
+    margin: 6px 0 6px;
+}
+
+.current-song__artists,
+.current-song__description {
+    font-size: 1.5rem;
+    color: #b2b2b2;
+    font-weight: 500;
+}
+
+.current-song__name,
+.current-song__artists {
+    overflow: hidden;
+    white-space: nowrap;
+    /* Don't forget this one */
+    text-overflow: ellipsis;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    ;
+}
+
+/* End current song */
